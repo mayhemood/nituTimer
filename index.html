@@ -27,14 +27,16 @@
           <span>🎉</span>
           <span>🎂</span>
         </div>
+      <button id="play-button">Play Audio</button>
       </div>
     </body>
 </html>
 
   <script>
-    window.onload = function() {
-    document.getElementById("my_audio").play();
-}
+    document.getElementById('play-button').addEventListener('click', function() {
+  document.getElementById('my_audio').play();
+  this.style.display = 'none'; // Hide the button after playing the audio
+});
       
     (function () {
   const second = 1000,
